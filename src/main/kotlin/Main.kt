@@ -1,10 +1,11 @@
 fun main(args: Array<String>) {
-    val  que = Que<Int>()
-    que.enQue(1)
-    que.enQue(2)
-    que.deQue()
-    que.print()
+    val stack = Stack(1)
+    stack.push(2)
+    stack.push(3)
+    stack.pop()
+    stack.pop()
+    stack.pop()
+    stack.print()
     println()
-    println(que.isEmpty())
-
+    println(stack.isEmpty())
 }
